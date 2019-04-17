@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='youtube',
-    version='0.0.1',
+    version='1.0.0',
     packages=['youtube'],
     url='',
     license='Private',
