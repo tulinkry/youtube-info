@@ -18,7 +18,6 @@ setup(
     install_requires=[
         'click',
         'requests',
-        'requests-cache',
     ],
     setup_requires=[
         'pytest-runner',

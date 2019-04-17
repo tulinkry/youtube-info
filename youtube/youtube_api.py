@@ -1,11 +1,9 @@
 import logging
 
 import requests
-import requests_cache
 
 from .exception import ApiException
 
-requests_cache.install_cache('youtube')
 logger = logging.getLogger(__name__)
 
 
