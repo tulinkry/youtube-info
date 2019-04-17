@@ -10,10 +10,18 @@ curl 'https://github.com/tulinkry/youtube-info/releases/download/0.0.1/youtube-0
 python3 -m pip install youtube-0.0.1.tar.gz
 ```
 
-# Usage
+# Running
+
+You can now run the utility as a module with
 
 ```
-python -m youtube --help
+python3 -m youtube
+```
+
+## The program usage
+
+```
+python3 -m youtube --help
 Usage: __main__.py [OPTIONS] ID...
 
   Command line tool for querying details about youtube videos.
@@ -46,3 +54,10 @@ apikey = xxx
 
 You can obtain the api key at https://console.developers.google.com/apis/credentials when creating 
 new projects and creating a new credentials in it.
+
+# Uninstalling
+
+You can uninstall the utility by doing
+```
+python3 -m pip uninstall youtube
+```
