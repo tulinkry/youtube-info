@@ -1,16 +1,20 @@
-# Installation
+# Youtube video info
 
-## Download recent release
+This utility lets you to download video information for selected video ids. The output goes to stdout and contains four columns: `id`, `title`, `publishedAt`, `viewCount` retrieved by the youtube api for every video id in the arguments.
+
+## Installation
+
+### Download recent release
 ```
 curl 'https://github.com/tulinkry/youtube-info/releases/download/1.0.0/youtube-1.0.0.tar.gz' > youtube-latest.tar.gz
 ```
 
-## Install it with python3
+### Install it with python3
 ```
 python3 -m pip install youtube-latest.tar.gz
 ```
 
-# Running
+## Running
 
 You can now run the utility as a module with
 
@@ -18,7 +22,7 @@ You can now run the utility as a module with
 python3 -m youtube
 ```
 
-## The program usage
+### The program usage
 
 ```
 python3 -m youtube --help
@@ -40,7 +44,7 @@ Options:
   --help             Show this message and exit.
 ```
 
-# Configuration
+## Configuration
 
 The utility needs a configuration file with an apikey for the youtube api. 
 The file is by default searched at `~/.youtube.auth.cfg` or alternatively you can
@@ -55,7 +59,7 @@ apikey = xxx
 You can obtain the api key at https://console.developers.google.com/apis/credentials when creating 
 new projects and creating a new credentials in it.
 
-# Uninstalling
+## Uninstalling
 
 You can uninstall the utility by doing
 ```
