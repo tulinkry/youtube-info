@@ -32,7 +32,7 @@ Options:
 # Configuration
 
 The utility needs a configuration file with an apikey for the youtube api. 
-The file is by default searched at ~/.youtube.auth.cfg or alternatively you can
+The file is by default searched at `~/.youtube.auth.cfg` or alternatively you can
 set the path using the `--config` option.
 
 The content example is:
