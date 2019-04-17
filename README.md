@@ -1,9 +1,12 @@
 # Installation
 
+## Download recent release
 ```
-# download recent release
 curl 'https://github.com/tulinkry/youtube-info/releases/download/0.0.1/youtube-0.0.1.tar.gz' > youtube-0.0.1.tar.gz
-# install it with python3
+```
+
+## Install it with python3
+```
 python3 -m pip install youtube-0.0.1.tar.gz
 ```
 
