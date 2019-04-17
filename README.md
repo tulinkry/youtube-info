@@ -6,7 +6,7 @@ This utility lets you to download video information for selected video ids. The 
 
 ### Download recent release
 ```
-curl 'https://github.com/tulinkry/youtube-info/releases/download/1.0.0/youtube-1.0.0.tar.gz' > youtube-latest.tar.gz
+curl -L 'https://github.com/tulinkry/youtube-info/releases/download/1.0.0/youtube-1.0.0.tar.gz' > youtube-latest.tar.gz
 ```
 
 ### Install it with python3
