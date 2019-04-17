@@ -33,19 +33,22 @@ class YoutubeVideosApi(YoutubeApi):
             'part': ','.join(['snippet', 'statistics'])
         })
 
-        gotAny = False
+        receivedIds = set()
         for response in self.get(**kwargs):
             if 'items' not in response:
                 logger.warning('items are not contained in the response')
                 continue
 
             for item in response['items']:
-                gotAny = True
                 video = YoutubeVideoInfo(item)
+                receivedIds.add(video.id)
                 logger.debug('found video details for id = %s', video.id)
                 yield video
 
-        if not gotAny:
+        for id in set(video_ids).difference(receivedIds):
+            logger.error('No info found about {}'.format(id))
+
+        if not receivedIds:
             raise ApiException('No items found in the responses, bad format?')
 
 
